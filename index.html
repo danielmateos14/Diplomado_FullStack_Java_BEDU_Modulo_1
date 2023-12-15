@@ -1,17 +1,58 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Cuerpo del documento y lenguaje-->
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> <!--Caracteres especiales como ñ-->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera pagina web</title> <!-- Titulo de la pestaña-->
+    <title>Menu Navegacion</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!--El div es un contenedor-->
-     <div class="contenedor"> <!--Class es para identificar elementos en CSS-->
-        <h1>Hola Mundo x2</h1><!--Los h son para el posicionamiento SEO, orden y jerarquia de los textos en la pagina-->
-        <p>Estamos apreniendo full stack en BEDU</p><!--Parrafo-->
-        <img src="https://images.unsplash.com/photo-1612404459571-ccef4b6588e7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-     </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo">Daniel Mateos</label>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section> 
+
+    </section>
+    <!--Aqui comienza la siguiente seccion de tarjetas-->
+    <div class="card-list">
+        <a href="#" class="card-item">
+            <img src="https://plus.unsplash.com/premium_photo-1679430106455-e5ab13a9007b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <span class="developer">Developer</span>
+            <h3>Sigamos aprendiendo, para mejorar </h3>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </a>
+
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <span class="developer">Designer</span>
+            <h3>Hagamoslo posible </h3>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </a>
+
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <span class="developer">Editor</span>
+            <h3>El mañana nunca muere</h3>
+            <div class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
