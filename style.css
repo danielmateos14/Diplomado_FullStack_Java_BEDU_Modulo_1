@@ -1,3 +1,10 @@
+/* Resetear todos los margenes */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #000;
@@ -6,13 +13,13 @@ body{
 nav{
     /*Los colores se expresan en hexadecimal*/
     background: rgb(0, 52, 98);
-    height: 150px;
+    height: 80px;
 
     /* Para que siempre se ponga y se adapte solo se utilizan los porcentajes  */
     width: 100%;
 }
 
-label.logo{
+label.logo {
     color: rgb(255, 255, 255);
     font-size: 32px;
     padding: 0 100px;
@@ -42,20 +49,22 @@ a:hover{
     transition: 0.5s;
 }
 
-.checkbtn{
+/* Las clases se acceden con el . */
+.checkbtn {
     display: none;
     font-size: 32px;
     color: #ffffff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+    float: right; /* Posicion de el elemento */
+    line-height: 80px; /* ancho de la linea */
+    margin-right: 40px; /* margen a la derecha */
 }
 
+/* Los id se acceden con el # */
 #check{
-    display: none;
+    display: none; /* Es para ocultar el cuadro de checkbox */
 }
 
-
+/* Modificar el logo */
 @media (max-width:952px){
     label.logo{
         font-size: 30px;
@@ -66,6 +75,7 @@ a:hover{
     }
 }
 
+/* Para adaptar a cualquier pantalla */
 @media (max-width:900px){
     .checkbtn{
         display: block;
@@ -73,11 +83,11 @@ a:hover{
 
     ul{
         position: fixed;
-        width: 100%;
+        width: 60%;
         height: 100%;
         background: #000;
         top: 80px;
-        left: -100%;
+        left: -120%;
         text-align: center;
         transition:  all .5s;
     }
@@ -89,12 +99,13 @@ a:hover{
 
     nav ul li a{
         font-size: 23px;
+        margin-left: -10%;
     }
 
+    /* Ocultar en la izquierda el menu, para que al presionar aparezca */
     #check:checked ~ ul{
         left: 0;
     }
-
 }
 
 /* termina el menu */
